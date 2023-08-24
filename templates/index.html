@@ -7,5 +7,40 @@
 </head>
     <body>
         <h1>Jod Application Form</h1>
+        <form action="">
+            <div>
+                <labels for="first_name">First Name:</labels>
+                <input type="text" id="first_name" name="first_name" required>
+            </div>
+            <div>
+                <labels for="last_name">Last Name:</labels>
+                <input type="text" id="last_name" name="last_name" required>
+            </div>
+            <div>
+                <labels for="email">Email:</labels>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <labels for="date">Available start date:</labels>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div>
+                <label>Current occupation</label><br>
+                <div id="occupation">
+                    <input type="radio" id="employed" name="occupation" required>
+                    <labels for="employed">Employed</labels>
+
+                    <input type="radio" id="unemployed" name="occupation" required>
+                    <labels for="employed">Unemployed</labels>
+
+                    <input type="radio" id="self_employed" name="occupation" required>
+                    <labels for="self_employed">Self-Employed</labels>
+
+                    <input type="radio" id="student" name="occupation" required>
+                    <labels for="student">Student</labels>
+                </div>
+            </div>
+            <button type="button">Submit</button>
+        </form>
     </body>
 </html>
